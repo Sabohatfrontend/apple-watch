@@ -114,6 +114,7 @@ img{
 
 .site-header {
   padding-top: 30px;
+  padding-bottom: 60px;
 }
 
 .site-logo-link {
@@ -178,22 +179,20 @@ img{
 
 .site-intro {
   padding-top: 85px;
+  padding-bottom: 185px;
   border-bottom: 2px solid var(--intro-border-color);
   margin-bottom: 68px;
-}
-
-.site-intro-container{
-  display: flex;
-  align-items: flex-start;
+  background-image: url(../img/apple-watch.svg);
+  background-position: 120% 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .site-intro-content {
-  width: 490px;
-  margin-right: 245px;
+
 }
 
 .site-intro-heading {
-  margin-top: 91px;
   margin-bottom: 30px;
   font-weight: var(--font-weight-heading);
   font-size: var(--font-size-intro-heading);
@@ -202,6 +201,7 @@ img{
 }
 
 .site-intro-text-content{
+  width: 490px;
   padding-bottom: 30px;
 }
 
@@ -213,20 +213,4 @@ img{
   font-size: var(--font-size-intro-text);
   font-weight: var(--font-weight-text);
   color: var(--intro-text-color);
-}
-
-.button {
-}
-
-.site-intro-link{
-  display: flex;
-  margin-right: -322px;
-  margin-bottom: -19px;
-}
-
-.site-intro-img {
-  width: 587px;
-  height: 565px;
-  object-fit: contain;
-  object-position: left top;
 }
