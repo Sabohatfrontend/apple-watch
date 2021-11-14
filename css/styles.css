@@ -5,10 +5,11 @@
   --brand-color-hover: #C9514C;
   --intro-heading: #000;
   --intro-text-color: #777;
-  --featur-heading-color: #222;
+  --feature-heading-color: #222;
   --feature-text-color: #333;
   --global-search-color: #666;
   --intro-border-color: #ddd;
+  --intro-text-left-border: #888;
   --font-family-text: "Roboto", "Arial", sans-serif;
   --font-weight-heading: 700;
   --font-weight-text: 400;
@@ -85,18 +86,31 @@ img{
   flex-grow: 1;
 }
 
-.button-size{
-  padding: 12px 39px;
-  border: 0;
+.button-intro{
+  padding-left: 39px;
+  padding-right: 39px;
+}
+
+.button-info{
+  padding-left: 90px;
+  padding-right: 90px;
+}
+
+.button-footer{
+  padding-left: 46px;
+  padding-right: 46px;
 }
 
 .button{
   display: inline-block;
+  padding-top: 12px;
+  padding-bottom: 12px;
   background-color: var(--brand-color);
   color: #fff;
   font-weight: var(--font-weight-heading);
   font-size: var(--font-size-feature-heading);
   text-transform: uppercase;
+  border: 0;
 }
 
 .button:hover{
@@ -140,10 +154,6 @@ img{
   list-style: none;
 }
 
-.site-nav-item {
-
-}
-
 .site-nav-item:not(:last-child){
   margin-right: 30px;
 }
@@ -177,22 +187,22 @@ img{
   color: var(--global-search-color);
 }
 
-.site-intro {
-  padding-top: 85px;
+.site-intro-container {
+  padding-top: 90px;
   padding-bottom: 185px;
   border-bottom: 2px solid var(--intro-border-color);
-  margin-bottom: 68px;
   background-image: url(../img/apple-watch.svg);
   background-position: 120% 20px;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
-.site-intro-content {
-
+.site-intro-content{
+  width: 490px;
 }
 
 .site-intro-heading {
+  margin-top: 0;
   margin-bottom: 30px;
   font-weight: var(--font-weight-heading);
   font-size: var(--font-size-intro-heading);
@@ -201,7 +211,6 @@ img{
 }
 
 .site-intro-text-content{
-  width: 490px;
   padding-bottom: 30px;
 }
 
@@ -209,8 +218,113 @@ img{
   padding-left: 40px;
   margin-top: 0;
   margin-bottom: 0;
-  border-left: 3px solid #888888;
+  border-left: 3px solid var(--intro-text-left-border);
   font-size: var(--font-size-intro-text);
   font-weight: var(--font-weight-text);
   color: var(--intro-text-color);
+}
+
+.site-feature {
+  padding-top: 68px;
+  padding-bottom: 140px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.site-feature-item {
+  width: 280px;
+}
+
+.site-feature-item:not(:last-child){
+  margin-right: 80px;
+}
+
+.site-feature-item-header {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-weight: var(--font-weight-heading);
+  font-size: var(--font-size-feature-heading);
+  color: var(--feature-heading-color);
+  text-transform: uppercase;
+}
+
+.site-feature-item-text {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.site-feature-item-link {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.site-feature-link-content {
+  display: flex;
+  align-items: center;
+}
+
+.dot-divider {
+  width: 8px;
+  height: 8px;
+  background-color: var(--intro-border-color);
+}
+
+.dot-divider:not(:last-child){
+  margin-right: 10px;
+}
+
+.liner {
+  width: 40px;
+  height: 0;
+  border-bottom: 3px solid var(--brand-color);
+  margin-right: 10px;
+}
+
+.site-feature-link-tekst {
+  color: var(--brand-color);
+  font-size: var(--font-size-intro-text);
+  font-weight: var(--font-weight-text);
+  text-transform: uppercase;
+}
+
+.site-info{
+  padding-top: 106px;
+  padding-bottom: 106px;
+  background-image: url(../img/watch-in-hand.jpg);
+  background-position: 90% bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 70px;
+}
+
+.site-footer{
+  padding-top: 240px;
+  padding-bottom: 240px;
+  background-image: url(../img/runners.jpg);
+  background-position: lest top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  --intro-heading: #fff;
+  --intro-text-color: #fff;
+  --intro-text-left-border: #fff;
+}
+
+.site-footer-content{
+  margin-left: auto;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+.site-info{
+  background-image: url(../img/watch-in-hand@2x.jpg);
+}
+
+.site-footer{
+  background-image: url(../img/runners@2x.jpg);
+}
 }
