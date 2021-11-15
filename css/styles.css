@@ -128,7 +128,7 @@ img{
 
 .site-header {
   padding-top: 30px;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
 }
 
 .site-logo-link {
@@ -193,11 +193,11 @@ img{
 }
 
 .site-intro-container {
-  padding-top: 90px;
+  padding-top: 140px;
   padding-bottom: 185px;
   border-bottom: 2px solid var(--intro-border-color);
   background-image: url(../img/intro-bg.jpg);
-  background-position: left calc(50% + 550px) bottom;
+  background-position: left calc(50% + 580px) bottom;
   background-repeat: no-repeat;
 }
 
