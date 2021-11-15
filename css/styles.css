@@ -155,26 +155,29 @@ img{
   list-style: none;
 }
 
+.site-nav-item{
+
+  border-bottom: 3px solid var(--background-color);
+}
+
+.site-nav-item:hover{
+  border-color: var(--feature-text-color);
+  transform: rotate(0.16deg);
+}
+
+.site-nav-item:active{
+  opacity: 0.6;
+}
+
 .site-nav-item:not(:last-child){
   margin-right: 30px;
 }
 
 .site-nav-link {
   display: inline-block;
-  margin-top: 6px;
-  margin-bottom: 6px;
   text-decoration: none;
   color: var(--feature-text-color);
-  border-bottom: 3px solid var(--background-color);
-}
-
-.site-nav-link:hover{
-  border-color: var(--feature-text-color);
-  transform: rotate(0.16deg);
-}
-
-.site-nav-link:active{
-  opacity: 0.6;
+  margin-bottom: 3px;
 }
 
 .global-form-search{
