@@ -96,7 +96,7 @@ img{
   padding-right: 90px;
 }
 
-.button-footer{
+.button-runners{
   padding-left: 46px;
   padding-right: 46px;
 }
@@ -327,7 +327,7 @@ img{
   object-fit: contain;
 }
 
-.site-footer{
+.site-runners{
   padding-top: 240px;
   padding-bottom: 240px;
   background-image: url(../img/runners.jpg);
@@ -339,7 +339,7 @@ img{
   --intro-text-left-border: #fff;
 }
 
-.site-footer-content{
+.site-runners-content{
   margin-left: auto;
 }
 
