@@ -103,6 +103,7 @@ img{
 
 .button{
   display: inline-block;
+  text-decoration: none;
   padding-top: 12px;
   padding-bottom: 12px;
   background-color: var(--brand-color);
