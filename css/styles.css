@@ -230,8 +230,8 @@ img{
 }
 
 .site-feature {
-  padding-top: 68px;
-  padding-bottom: 140px;
+  padding-top: 70px;
+  padding-bottom: 70px;
   display: flex;
   align-items: flex-start;
 }
@@ -314,7 +314,7 @@ img{
 }
 
 .site-info{
-  padding-top: 0;
+  padding-top: 70px;
   padding-bottom: 70px;
   display: flex;
   align-items: center;
