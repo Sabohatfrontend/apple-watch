@@ -262,6 +262,34 @@ img{
   text-decoration: none;
 }
 
+.site-feature-item-liner{
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--brand-color);
+}
+
+.site-feature-item-liner::before{
+  width: 40px;
+  height: 3px;
+  background-color: var(--brand-color);
+  margin-right: 10px;
+  content: "";
+  transition: width 0.3s ease;
+}
+
+.site-feature-item-liner:hover::before{
+  width: 60px;
+}
+
+.site-feature-item-liner:active{
+  --brand-color: var(--brand-color-hover);
+}
+
 .site-feature-link-content {
   display: flex;
   align-items: center;
@@ -274,13 +302,6 @@ img{
 }
 
 .dot-divider:not(:last-child){
-  margin-right: 10px;
-}
-
-.liner {
-  width: 40px;
-  height: 0;
-  border-bottom: 3px solid var(--brand-color);
   margin-right: 10px;
 }
 
