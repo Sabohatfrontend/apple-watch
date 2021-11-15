@@ -314,13 +314,17 @@ img{
 }
 
 .site-info{
-  padding-top: 106px;
-  padding-bottom: 106px;
-  background-image: url(../img/watch-in-hand.jpg);
-  background-position: 90% bottom;
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-bottom: 70px;
+  padding-top: 0;
+  padding-bottom: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-info-img{
+  width: 400px;
+  height: 600px;
+  object-fit: contain;
 }
 
 .site-footer{
