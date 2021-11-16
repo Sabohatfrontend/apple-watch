@@ -258,11 +258,6 @@ img{
   margin-bottom: 20px;
 }
 
-.site-feature-item-link {
-  display: inline-block;
-  text-decoration: none;
-}
-
 .site-feature-item-liner{
   display: inline-flex;
   align-items: center;
@@ -331,7 +326,7 @@ img{
   padding-top: 240px;
   padding-bottom: 240px;
   background-image: url(../img/runners.jpg);
-  background-position: lest top;
+  background-position: left top;
   background-repeat: no-repeat;
   background-size: cover;
   --intro-heading: #fff;
